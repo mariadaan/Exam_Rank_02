@@ -82,7 +82,7 @@ int ft_atoi(char *s)
 
 void ft_putnbr(t_info *info, int num)
 {
-	if (num > 9)
+	if (num >= 10)
 		ft_putnbr(info, num / 10);
 	ft_putchar(info, (num % 10) + '0');
 }
@@ -90,7 +90,7 @@ void ft_putnbr(t_info *info, int num)
 void ft_puthexnbr(t_info *info, unsigned int num)
 {
 	char basestr[17] = "0123456789abcdef";
-	if (num > 16)
+	if (num >= 16)
 		ft_puthexnbr(info, num / 16);
 	ft_putchar(info, basestr[num % 16]);
 }
