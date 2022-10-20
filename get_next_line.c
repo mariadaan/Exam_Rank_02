@@ -1,5 +1,6 @@
-#include "get_next_line.h"
+#include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int	ft_strlen(char *s)
 {
